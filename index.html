@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3308/3308395.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Mi Portafolio</title>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html"><img src="assets/PLACEMODEL.png" alt=""></a>
+    <nav class="navbar">
+      <ul class="navbar__menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#habilidad">Habilidades</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- section hero  -->
+  <section class="hero">
+    <div class="hero__container">
+      <div class="hero__info">
+        <h1>Soy Piervil <span>Jacques Jean</span>  Fontend Developer</h1>
+        <p>Soy diseñador web WordPress y Shopify con más de 2 años de experiencia. Estudiante de programación Front-end en Platzi y Nucba</p>
+        <button type="submit">Descargar CV</button>
+      </div>
+      <div class="hero__picture">
+        <img src="assets/yo.png" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- section habilidades -->
+  <section class="habilidades" id="habilidad">
+    <h2>Mis Habilidades</h2>
+    <div class="habilidad__container">
+      <div class="habilidad__info">
+        <img src="assets/html.png" alt="">
+        <p>En este momento estoy aprendiendo el desarrollo web Frontend en Platzi y Nucba, mi conocimiento en Html5 esta en el nivel intermediario </p>
+      </div>
+      <div class="habilidad__info">
+        <img src="assets/css.png" alt="">
+        <p>En este momento estoy aprendiendo el desarrollo web Frontend en Platzi y Nucba, mi conocimiento en Css3 esta en el nivel intermediario </p>
+      </div>
+      <div class="habilidad__info">
+        <img src="assets/javascript.png" alt="">
+        <p>En este momento estoy aprendiendo el desarrollo web Frontend en Platzi y Nucba, mi conocimiento en Javascript esta en el nivel básico </p>
+      </div>
+    </div>
+  </section>
+  <!-- section Portafolio  -->
+  <section class="portafolio" id="portafolio">
+    <h2>Ver Mi Portafolio</h2>
+    <div class="portafolio__container">
+      <div class="portafolio__picture">
+        <img src="assets/web.jpg" alt="">
+        <img src="assets/program.jpg" alt="">
+        <img src="assets/ui.jpg" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- section formulario  -->
+  <form action="" class="formulario" id="contacto">
+    <h2>Hablamos de tu proyecto</h2>
+    <div class="formulario__container">
+      <div class="formulario__info">
+        <label class="campo" for="nombre">Nombre Completo</label>
+        <input class="campo" type="text" id="nombre" placeholder="Nombre Completo" required>
+        <label class="campo" for="correo">Correo Electrónico</label>
+        <input class="campo" type="email" id="correo" placeholder="Correo" required>
+        <textarea placeholder="Mensaje..."></textarea>
+        <input class="btn" type="submit" value="Enviar">
+      </div>
+    </div>
+  </form>
+  <footer class="footer">
+    <p>Hecho ❤️ por Piervil Jacques Jean</p>
+  </footer>
+</body>
+</html>

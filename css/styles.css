@@ -1,0 +1,249 @@
+/*== Main reset ==*/
+:root {
+  --color-primary: #C70039;
+  --color-second: #020F84;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-background: #00042B;
+  --font: 'Oswald', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*== The header ==*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .1rem 5rem;
+}
+
+.navbar__menu {
+  display: flex;
+  gap: 4rem;
+  padding: 0 8rem;
+}
+
+.navbar__menu li {
+  list-style: none;
+}
+
+.navbar__menu a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color-black);
+  font-family: var(--font);
+}
+
+.navbar__menu a:hover {
+  text-decoration: underline;
+}
+
+/*== The hero ==*/
+
+.hero {
+  background: rgb(10,121,238);
+  background: linear-gradient(132deg, rgba(10,121,238,1) 1%, rgba(36,0,180,1) 58%);
+  color: var(--color-white);
+}
+
+.hero__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 9rem;
+}
+
+.hero__container h1 {
+  width: 70%;
+  font-size: 4rem;
+  font-family: var(--font);
+  padding-bottom: 2rem;
+}
+
+.hero__container p {
+  width: 60%;
+  padding-bottom: 2rem;
+}
+
+.hero__info button {
+  padding: 1rem;
+  border-radius: .8rem;
+  background-color: var(--color-background);
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  cursor: pointer;
+  width: 20%;
+}
+
+.hero__info button:hover {
+  background-color: var(--color-white);
+  color: var(--color-background);
+  border: 1px solid var(--color-background);
+}
+
+.hero__picture img {
+  width: 45rem;
+  border: 3px solid var(--color-background);
+}
+
+/*== The habilidad ==*/
+
+.habilidades {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 9rem;
+}
+
+.habilidades h2 {
+  font-family: var(--font);
+  font-size: 3rem;
+}
+
+.habilidad__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.habilidad__info {
+  background-color: #00042B;
+  margin: 2rem;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.habilidad__info p {
+  color: var(--color-white);
+  font-size: 1.2rem;
+  padding-top: 2rem;
+  
+}
+
+.habilidad__info img {
+  width: 5rem;
+}
+
+/*== The portafolio ==*/
+
+.portafolio {
+  background-color: #e6e6e6;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 9rem;
+}
+
+.portafolio h2 {
+  font-family: var(--font);
+  font-size: 3rem;
+  padding-bottom: 3rem;
+}
+
+.portafolio__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.portafolio__picture {
+  display: flex;
+  gap: 2rem;
+}
+
+.portafolio__picture img {
+  width: 33rem;
+  border-radius: 1rem;
+}
+
+/*== The contacto ==*/
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  height: 40rem;
+  background-color: #f4f4f4;
+  margin: 2rem auto;
+  border-radius: 2rem;
+  padding: 0 2rem;
+}
+
+.formulario h2 {
+  font-family: var(--font);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.campo {
+  width: 95%;
+  padding: 1rem .8rem;
+  border-radius: 2rem;
+  border: none;
+  margin: .9rem 0;
+}
+
+.formulario__container textarea {
+  width: 360px;
+  height: 100px;
+  padding: .8rem;
+  resize: none;
+  border: none;
+  border-radius: 1rem;
+}
+
+
+.btn {
+  width: 95%;
+  padding: .8rem;
+  background-color: var(--color-background);
+  color: var(--color-white);
+  border-radius: 2rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  font-size: 1.8;
+}
+
+/*== The footer ==*/
+
+.footer {
+  background-color: var(--color-background);
+  color: var(--color-white);
+  text-align: center;
+  padding: 2rem;
+}
+
