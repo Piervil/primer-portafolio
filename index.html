@@ -7,7 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3308/3308395.png" type="image/png">
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3059/3059997.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/styles.css">
   <title>Mi Portafolio</title>
 </head>
@@ -15,6 +16,10 @@
   <header class="header">
     <a class="logo" href="index.html"><img src="assets/PLACEMODEL.png" alt=""></a>
     <nav class="navbar">
+      <input type="checkbox" id="check">
+      <label for="check" class="toggle__menu">
+        <i class="fa-sharp fa-solid fa-bars"></i>
+      </label>
       <ul class="navbar__menu">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="#habilidad">Habilidades</a></li>
@@ -27,9 +32,14 @@
   <section class="hero">
     <div class="hero__container">
       <div class="hero__info">
-        <h1>Soy Piervil <span>Jacques Jean</span>  Fontend Developer</h1>
-        <p>Soy diseñador web WordPress y Shopify con más de 2 años de experiencia. Estudiante de programación Front-end en Platzi y Nucba</p>
-        <button type="submit">Descargar CV</button>
+        <h1>Hola Soy Piervil <span>Jacques</span> Fontend Developer</h1>
+        <p>Estoy estudiando programación Front-end en las plataformas de Platzi y Nucba.</p>
+        <p class="hero__redes">
+          <a href="https://www.linkedin.com/in/jacques-jean-piervil-474b3a191/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/Piervil" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://twitter.com/PiervilJean" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </p>
+        <a class="hero__cv" href="https://drive.google.com/file/d/1HmJ3A-6iHGSXXpKc5Y2exL2zz-_suleS/view?usp=share_link" target="_blank">Descargar CV</a>
       </div>
       <div class="hero__picture">
         <img src="assets/yo.png" alt="">
@@ -38,30 +48,98 @@
   </section>
   <!-- section habilidades -->
   <section class="habilidades" id="habilidad">
-    <h2>Mis Habilidades</h2>
+    <h2>Mis Habilidades Técnicas</h2>
     <div class="habilidad__container">
       <div class="habilidad__info">
         <img src="assets/html.png" alt="">
-        <p>En este momento estoy aprendiendo el desarrollo web Frontend en Platzi y Nucba, mi conocimiento en Html5 esta en el nivel intermediario </p>
+        <p>En este momento estoy aprendiendo el desarrollo web, mi conocimiento en html5 esta a un nivel intermediario.</p>
       </div>
       <div class="habilidad__info">
         <img src="assets/css.png" alt="">
-        <p>En este momento estoy aprendiendo el desarrollo web Frontend en Platzi y Nucba, mi conocimiento en Css3 esta en el nivel intermediario </p>
+        <p>Me defiendo bastante bien con css, llevo un par de tiempo practicando para mejorarme, mi conocimiento esta a un nivel intermediario.</p>
       </div>
       <div class="habilidad__info">
         <img src="assets/javascript.png" alt="">
-        <p>En este momento estoy aprendiendo el desarrollo web Frontend en Platzi y Nucba, mi conocimiento en Javascript esta en el nivel básico </p>
+        <p>Estoy aprendiendo javascript ahora, mi conocimiento en javascript esta en el nivel muy básico.</p>
+      </div>
+    </div>
+  </section>
+  <section class="habilidades">
+    <h2>Herramientas Que Manejo</h2>
+    <div class="habilidad__container">
+      <div class="habilidad__info">
+        <img src="assets/git.png" alt="">
+        <p>De todo lo que yo sé sobre de Git ahora, me encontré a un nivel básico en este momento.</p>
+      </div>
+      <div class="habilidad__info">
+        <img src="assets/github.png" alt="">
+        <p>Puedo decir que mi conocimiento sobre Github esta a un nivel intermediario.</p>
+      </div>
+      <div class="habilidad__info">
+        <img src="assets/terminal.png" alt="">
+        <p>Yo manejo mas o menos bien la terminal, más bien la terminal de Linux. Estoy a en nivel básico.</p>
+      </div>
+    </div>
+  </section>
+  <section class="sobre">
+    <div class="sobre__container">
+      <div class="sobre__info">
+        <img src="assets/Interview.png" alt="">
+        <div class="sobre__text">
+          <h2>Acerca de mi</h2>
+          <p>Hace como 2 años que yo ha realizando tiendas online con WordPress y Shopify. Llego un momento que quería saber y entender bien lo que yo estaba haciendo con wordpress, y decidí meterme en la programación. En este momento estoy estudiando Programación Front-end en las plataformas de Platzi y Nucba.</p>
+            <a class="hero__cv" href="https://drive.google.com/file/d/1HmJ3A-6iHGSXXpKc5Y2exL2zz-_suleS/view?usp=share_link" target="_blank">Descargar CV</a>
+        </div>
       </div>
     </div>
   </section>
   <!-- section Portafolio  -->
   <section class="portafolio" id="portafolio">
-    <h2>Ver Mi Portafolio</h2>
+    <h2>Mi Portafolio</h2>
     <div class="portafolio__container">
-      <div class="portafolio__picture">
-        <img src="assets/web.jpg" alt="">
-        <img src="assets/program.jpg" alt="">
-        <img src="assets/ui.jpg" alt="">
+      <div class="portafolio__info">
+        <div class="portafolio__text">
+          <img src="assets/card.png" alt="card">
+          <div class="portafolio__desc">
+            <h3>Reto Frontend Mentor</h3>
+            <p>Plataforma que permite gestionar productos.</p>
+          </div>
+          <div class="portafolio__lang">
+            <span>HTML</span>
+            <span>CSS</span>
+          </div>
+          <div class="portafolio__link">
+            <a href="">Ver Sitio</a>
+          </div>
+        </div>
+        <div class="portafolio__text">
+          <img src="assets/code.png" alt="card">
+          <div class="portafolio__desc">
+            <h3>Reto Frontend Mentor</h3>
+          <p>Plataforma que permite gestionar productos.</p>
+          </div>
+          <div class="portafolio__lang">
+            <span>HTML</span>
+            <span>CSS</span>
+          </div>
+          <div class="portafolio__link">
+          <a href="">Ver Sitio</a>
+          </div>
+        </div>
+        <div class="portafolio__text">
+          <img src="assets/huddle.png" alt="card">
+          <div class="portafolio__desc">
+            <h3>Reto Frontend Mentor</h3>
+            <p>Plataforma que permite gestionar productos.</p>
+          </div>
+          <div class="portafolio__lang">
+            <span>HTML</span>
+            <span>CSS</span>
+          </div>
+          <div class="portafolio__link">
+            <a href="">Ver Sitio</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>

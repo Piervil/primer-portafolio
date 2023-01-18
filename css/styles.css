@@ -12,15 +12,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
 }
 
 img {
@@ -34,6 +37,11 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: .1rem 5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: rgb(253, 252, 252);
 }
 
 .navbar__menu {
@@ -50,13 +58,16 @@ img {
   text-decoration: none;
   font-size: 1.7rem;
   font-weight: bold;
-  text-transform: uppercase;
   color: var(--color-black);
   font-family: var(--font);
 }
 
 .navbar__menu a:hover {
   text-decoration: underline;
+}
+
+#check, .toggle__menu {
+  display: none;
 }
 
 /*== The hero ==*/
@@ -72,6 +83,8 @@ img {
   justify-content: center;
   align-items: center;
   padding: 3rem 9rem;
+  margin-top: 4rem;
+  max-width: 1200px;
 }
 
 .hero__container h1 {
@@ -86,8 +99,26 @@ img {
   padding-bottom: 2rem;
 }
 
-.hero__info button {
-  padding: 1rem;
+.hero__redes {
+  margin-bottom: 10px;
+}
+
+.hero__redes a{
+  color: var(--color-black);
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #00042B;
+  color: #e6e6e6;
+}
+
+.hero__redes a:hover{
+  background-color: #ffffff;
+  color: #000;
+}
+
+.hero__cv {
+  padding: .5rem .9rem;
   border-radius: .8rem;
   background-color: var(--color-background);
   color: var(--color-white);
@@ -96,15 +127,19 @@ img {
   width: 20%;
 }
 
-.hero__info button:hover {
+.hero__cv:hover {
   background-color: var(--color-white);
   color: var(--color-background);
-  border: 1px solid var(--color-background);
+}
+
+.hero__info a {
+  text-decoration: none;
 }
 
 .hero__picture img {
-  width: 45rem;
-  border: 3px solid var(--color-background);
+  width: 30rem;
+  border-radius: 50%;
+  border: 6px solid var(--color-background);
 }
 
 /*== The habilidad ==*/
@@ -113,6 +148,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 1200px;
   align-items: center;
   padding: 3rem 9rem;
 }
@@ -150,8 +186,44 @@ img {
 }
 
 .habilidad__info img {
-  width: 5rem;
+  width: 6rem;
 }
+
+/*== Sobre ==*/
+  .sobre__container {
+    display: flex;
+    max-width: 1200px;
+  }
+
+  .sobre__info {
+    display: flex;
+    /* flex-wrap: wrap; */
+    padding: 3rem 9rem;
+  }
+
+  .sobre__text h2 {
+    font-family: var(--font);
+    padding: 10px 0;
+    font-size: 3rem;
+  }
+
+  .sobre__text p {
+    width: 85%;
+    padding: 30px 0;
+    line-height: 23px;
+  }
+
+  .sobre__text a {
+    text-decoration: none;
+  }
+  .sobre__text a:hover {
+    background-color: #000d9a;
+    color: #fff;
+  }
+
+  .sobre__info img {
+    width: 400px;
+  }
 
 /*== The portafolio ==*/
 
@@ -169,23 +241,50 @@ img {
   font-family: var(--font);
   font-size: 3rem;
   padding-bottom: 3rem;
+  text-align: center;
 }
 
 .portafolio__container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 900px;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
-.portafolio__picture {
+.portafolio__info {
   display: flex;
-  gap: 2rem;
 }
 
-.portafolio__picture img {
-  width: 33rem;
-  border-radius: 1rem;
+.portafolio__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.portafolio__desc {
+  font-size: 1.5rem;
+}
+
+.portafolio__lang span {
+  background-color: var(--color-background);
+  color: #fff;
+  border-radius: 7px;
+  padding: 1px 6px;
+}
+
+.portafolio__link a {
+  text-decoration: none;
+  color: #000;
+}
+
+.portafolio__link a:hover {
+  text-decoration: underline;
 }
 
 /*== The contacto ==*/
@@ -218,7 +317,7 @@ img {
 }
 
 .formulario__container textarea {
-  width: 360px;
+  width: 95%;
   height: 100px;
   padding: .8rem;
   resize: none;
@@ -245,5 +344,40 @@ img {
   color: var(--color-white);
   text-align: center;
   padding: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  /*== MENU RESPONSIVE ==*/
+  #check {
+    display: none;
+  }
+  .toggle__menu {
+    display: block;
+    font-size: 34px;
+    position: fixed;
+    top: 10px;
+    right: 30px;
+  }
+  .navbar__menu {
+    display: block;
+    position: fixed;
+    background-color: #00042B;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+    top: 50px;
+    left: -100%;
+  }
+  .navbar__menu li {
+    padding: 30px 10px;
+  }
+  .navbar__menu li a {
+    color: #fff;
+  }
+
+  #check:checked ~ ul {
+    display: block;
+    left: 0;
+  }
 }
 
