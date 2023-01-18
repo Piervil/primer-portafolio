@@ -210,9 +210,9 @@ img {
   }
 
   .sobre__text p {
-    width: 87%;
-    padding: 30px 20px;
+    padding: 0 20px;
     line-height: 23px;
+    margin-bottom: 10px;
   }
 
   .sobre__text a {
@@ -422,9 +422,9 @@ img {
     flex-wrap: wrap;
   }
   .sobre__text p {
-    width: 100%;
-    padding: 30px 20px;
+    padding: 0 20px;
     line-height: 23px;
+    margin-bottom: 10px;
   }
   /*== PORTAFOLIO ==*/
   .portafolio__info {
@@ -472,7 +472,7 @@ img {
   /*== THE HERO ==*/
   .hero__container h1 {
     width: 100%;
-    font-size: 3.2rem;
+    font-size: 2.2rem;
     padding-bottom: 2rem;
     padding-top: 2rem;
   }
@@ -494,7 +494,24 @@ img {
 }}
 
 @media screen and (max-width: 434px) {
+  .hero__container h1 {
+    width: 100%;
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
   .habilidades h2 {
     font-size: 2rem;
+  }
+  .sobre__text h2 {
+    font-size: 2rem;
+  }
+  .portafolio__text {
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .portafolio__text img {
+    width: 950px;
   }
 }
