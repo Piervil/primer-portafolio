@@ -352,12 +352,15 @@ img {
 /*== The footer ==*/
 
 .footer {
-  max-width: 1200px;
-  margin: 0 auto;
   background-color: var(--color-background);
   color: var(--color-white);
   text-align: center;
   padding: 2rem;
+}
+
+.formulario__container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 850px) {
