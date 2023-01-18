@@ -245,30 +245,38 @@ img {
 }
 
 .portafolio__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #ffffff;
+  max-width: 1200px;
   border-radius: 10px;
-  overflow: hidden;
-  width: 900px;
   text-align: center;
-  padding-bottom: 20px;
 }
 
 .portafolio__info {
   display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .portafolio__text {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 28%;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.portafolio__text img {
+  width: 350px;
+  border-radius: 10px;
 }
 
 .portafolio__desc {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .portafolio__lang span {
