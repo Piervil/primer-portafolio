@@ -425,11 +425,22 @@ img {
   /*== PORTAFOLIO ==*/
   .portafolio__info {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
   }
-  /*== PORTAFOLIO ==*/
-
-
+  .portafolio__text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 45%;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .portafolio__text img {
+    width: 950px;
+  }
 }
 
