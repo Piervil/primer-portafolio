@@ -384,7 +384,7 @@ img {
     right: 0;
     top: 60px;
     left: -100%;
-    transition: all .9s;
+    transition: all .5s;
   }
   .navbar__menu li {
     padding: 30px 10px;
@@ -396,7 +396,7 @@ img {
   #check:checked ~ ul {
     display: block;
     left: 0;
-    transition: all .9s;
+    transition: all .5s;
   }
   /*== THE HEAD =0*/
   .header {
