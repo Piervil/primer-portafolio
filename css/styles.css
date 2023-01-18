@@ -82,9 +82,10 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem 9rem;
+  padding: 7rem 9rem;
   margin-top: 4rem;
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 .hero__container h1 {
@@ -137,7 +138,7 @@ img {
 }
 
 .hero__picture img {
-  width: 30rem;
+  width: 28rem;
   border-radius: 50%;
   border: 6px solid var(--color-background);
 }
@@ -149,6 +150,7 @@ img {
   flex-direction: column;
   justify-content: center;
   max-width: 1200px;
+  margin: 0 auto;
   align-items: center;
   padding: 3rem 9rem;
 }
@@ -193,28 +195,29 @@ img {
   .sobre__container {
     display: flex;
     max-width: 1200px;
+    margin: 0 auto;
   }
 
   .sobre__info {
     display: flex;
-    /* flex-wrap: wrap; */
     padding: 3rem 9rem;
   }
 
   .sobre__text h2 {
     font-family: var(--font);
-    padding: 10px 0;
+    padding: 10px 20px;
     font-size: 3rem;
   }
 
   .sobre__text p {
-    width: 85%;
-    padding: 30px 0;
+    width: 87%;
+    padding: 30px 20px;
     line-height: 23px;
   }
 
   .sobre__text a {
     text-decoration: none;
+    margin: 0 20px;
   }
   .sobre__text a:hover {
     background-color: #000d9a;
@@ -248,6 +251,7 @@ img {
   max-width: 1200px;
   border-radius: 10px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .portafolio__info {
@@ -348,13 +352,15 @@ img {
 /*== The footer ==*/
 
 .footer {
+  max-width: 1200px;
+  margin: 0 auto;
   background-color: var(--color-background);
   color: var(--color-white);
   text-align: center;
   padding: 2rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   /*== MENU RESPONSIVE ==*/
   #check {
     display: none;
@@ -387,5 +393,43 @@ img {
     display: block;
     left: 0;
   }
+  /*== THE HERO ==*/
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero__container h1 {
+    width: 90%;
+    font-size: 4rem;
+    padding-bottom: 2rem;
+  }
+  .hero__container p {
+    width: 70%;
+  }
+  .hero__picture img {
+    width: 28rem;
+    margin: 0 auto;
+  }
+  /*== SOBRE ==*/
+  .sobre__info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sobre__text p {
+    width: 100%;
+    padding: 30px 20px;
+    line-height: 23px;
+  }
+  /*== PORTAFOLIO ==*/
+  .portafolio__info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  /*== PORTAFOLIO ==*/
+
+
 }
 
