@@ -88,6 +88,13 @@ img {
   margin: 0 auto;
 }
 
+.hero__info span {
+  background: linear-gradient(to right, #0bb2ff, #fe4000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .hero__container h1 {
   width: 70%;
   font-size: 4rem;
@@ -158,6 +165,10 @@ img {
 .habilidades h2 {
   font-family: var(--font);
   font-size: 3rem;
+  background: radial-gradient(circle, rgba(6,15,60,1) 33%, rgba(228,14,57,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .habilidad__container {
@@ -207,6 +218,10 @@ img {
     font-family: var(--font);
     padding: 10px 20px;
     font-size: 3rem;
+    background: radial-gradient(circle, rgba(6,15,60,1) 33%, rgba(228,14,57,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 
   .sobre__text p {
@@ -245,6 +260,10 @@ img {
   font-size: 3rem;
   padding-bottom: 3rem;
   text-align: center;
+  background: radial-gradient(circle, rgba(6,15,60,1) 33%, rgba(228,14,57,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .portafolio__container {
@@ -318,6 +337,10 @@ img {
   font-family: var(--font);
   font-size: 3rem;
   margin-bottom: 2rem;
+  background: radial-gradient(circle, rgba(6,15,60,1) 33%, rgba(228,14,57,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .campo {
